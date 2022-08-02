@@ -1,6 +1,34 @@
 /* HandmadeQuilts.com Stylesheet */
 
+body {
+  background-color: #EDEDE9
+}
+
+h1 {
+  background-image: 
+  radial-gradient(ellipse 40% 30% at top,#D5BDAF 98%, transparent),
+  radial-gradient(ellipse 40% 30% at bottom, #D5BDAF 98%, transparent),
+  radial-gradient(ellipse 30% 40% at right, #D5BDAF 98%, transparent),
+  radial-gradient(ellipse 30% 40% at left, #D5BDAF 98%, transparent);
+  background-size: 1% 16%;
+  background-repeat: repeat;
+}
+
+button {
+  background-image: 
+  radial-gradient(ellipse 40% 30% at top,#D5BDAF 98%, transparent),
+  radial-gradient(ellipse 40% 30% at bottom, #D5BDAF 98%, transparent),
+  radial-gradient(ellipse 30% 40% at right, #F5EBE0 98%, transparent),
+  radial-gradient(ellipse 30% 40% at left, #F5EBE0 98%, transparent);
+  background-size: 4% 30%;
+  background-repeat: repeat;
+}
+
 .nav-butt {
   border: outset;
   border-radius: 20px 0 20px 0;
+  border-color: #F5EBE0;
+}
+.merica {
+  background-color: repeating-linear-gradient(45deg, red, red 1%, white, blue 9%);
 }
