@@ -1,27 +1,67 @@
-/* HandmadeQuilts.com Stylesheet */
+/* HandmadeQuilts.com Stylesheet
+   custom colors:
+    #EDEDE9
+    #D5BDAF
+    #F5EBE0
+*/
+
+:root {
+  --background-color: #EDEDE9;
+  --text-color: #000000;
+  --color-1: #D5BDAF;
+  --color-2: #F5EBE0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 4%;
+}
 
 body {
-  background-color: #EDEDE9
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+img {
+  /* clamp function helps display on smaller screens ~ clamp(Min, Preferred, Max) */
+  width: clamp(160px, 20%, 400px);
+}
+
+p {
+  margin-inline: 8%;
+}
+
+.gray {
+  filter: grayscale(80%)
 }
 
 h1 {
+  transform: rotate(-3deg);
   background-image: 
-  radial-gradient(ellipse 40% 30% at top,#D5BDAF 98%, transparent),
-  radial-gradient(ellipse 40% 30% at bottom, #D5BDAF 98%, transparent),
-  radial-gradient(ellipse 30% 40% at right, #D5BDAF 98%, transparent),
-  radial-gradient(ellipse 30% 40% at left, #D5BDAF 98%, transparent);
+  radial-gradient(ellipse 40% 30% at top, var(--color-1) 98%, transparent),
+  radial-gradient(ellipse 40% 30% at bottom, var(--color-1) 98%, transparent),
+  radial-gradient(ellipse 30% 40% at right, var(--color-1) 98%, transparent),
+  radial-gradient(ellipse 30% 40% at left, var(--color-1) 98%, transparent);
   background-size: 1% 16%;
   background-repeat: repeat;
 }
 
 button {
   background-image: 
-  radial-gradient(ellipse 40% 30% at top,#D5BDAF 98%, transparent),
-  radial-gradient(ellipse 40% 30% at bottom, #D5BDAF 98%, transparent),
-  radial-gradient(ellipse 30% 40% at right, #F5EBE0 98%, transparent),
-  radial-gradient(ellipse 30% 40% at left, #F5EBE0 98%, transparent);
+  radial-gradient(ellipse 40% 30% at top, var(--color-1) 98%, transparent),
+  radial-gradient(ellipse 40% 30% at bottom, var(--color-1) 98%, transparent),
+  radial-gradient(ellipse 30% 40% at right, var(--color-2) 98%, transparent),
+  radial-gradient(ellipse 30% 40% at left, var(--color-2) 98%, transparent);
   background-size: 4% 30%;
   background-repeat: repeat;
+}
+
+nav {
+  text-align: center;
 }
 
 .nav-butt {
@@ -29,6 +69,11 @@ button {
   border-radius: 20px 0 20px 0;
   border-color: #F5EBE0;
 }
-.merica {
+.merica {   /* not working lol */
   background-color: repeating-linear-gradient(45deg, red, red 1%, white, blue 9%);
 }
+
+.tiny-text {
+  font-size: 5px;
+}
+
