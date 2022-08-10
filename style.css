@@ -29,6 +29,7 @@ body {
 img {
   /* clamp function helps display on smaller screens ~ clamp(Min, Preferred, Max) */
   width: clamp(160px, 20%, 400px);
+  border: 5px var(--color-1);
 }
 
 p {
@@ -48,6 +49,7 @@ h1 {
   radial-gradient(ellipse 30% 40% at left, var(--color-1) 98%, transparent);
   background-size: 1% 16%;
   background-repeat: repeat;
+  border: dotted;
 }
 
 button {
@@ -65,12 +67,41 @@ nav {
 }
 
 .nav-butt {
-  border: outset;
+  border: dotted;
   border-radius: 20px 0 20px 0;
-  border-color: #F5EBE0;
+  border-color: var(--text-color);
 }
-.merica {   /* not working lol */
-  background-color: repeating-linear-gradient(45deg, red, red 1%, white, blue 9%);
+
+.stripe-wrapper {
+  max-width: 50px;
+}
+
+.blue-wrapper {
+  max-width: 20px;
+  position: relative;
+  top: -26px;
+  right: 15px;
+}
+
+.stripe-wrapper, .blue-wrapper {
+  margin: auto;
+}
+
+.blue , .red,  .white {
+  height: 2px;
+  margin: 0;
+}
+
+.blue {
+  background-color: #0A3161;
+}
+
+.red {
+  background-color: #B31942;
+}
+
+.white {
+  background-color: #e4e4e1;
 }
 
 .tiny-text {
