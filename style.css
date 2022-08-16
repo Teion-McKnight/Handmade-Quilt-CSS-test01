@@ -41,6 +41,7 @@ span {
   margin: 0 auto;
 }
 
+/* lazily turns photos gray to make black/gray colorways of the same quilt. It's bad cuz it affects the border*/
 .gray {
   filter: grayscale(80%);
   margin: -1px;
@@ -78,16 +79,25 @@ nav {
   text-align: center;
 }
 
+/* for navigation buttons Home, F.A.Q. etc. */
 .nav-butt {
   border: dotted;
   border-radius: 20px 0 20px 0;
   border-color: var(--text-color);
 }
 
+/* wraps the entire flag and made in america text */
+.merica-rap {
+  display: flex;
+  flex-direction: column;
+}
+
+/* controls the red and white stripes of flag */
 .stripe-wrapper {
   max-width: 50px;
 }
 
+/* blue is offset to appear in top left hand side of stripes */
 .blue-wrapper {
   max-width: 20px;
   position: relative;
@@ -95,11 +105,11 @@ nav {
   right: 15px;
 }
 
+/* controls the entire flag */
 .flag-wrapper {
   position: relative;
   bottom: .9em;
   left: 8em;
-  width: ;
   margin: 0 auto;
 }
 
@@ -107,6 +117,7 @@ nav {
   margin: auto;
 }
 
+/* keeps the stripes of flag touching and a uniform height */
 .blue , .red,  .white {
   height: 2px;
   margin: 0;
@@ -128,6 +139,7 @@ nav {
   margin-bottom: 0;
 }
 
+/* for little copyright text at bottom of page */
 .tiny-text {
   font-size: 5px;
 }
